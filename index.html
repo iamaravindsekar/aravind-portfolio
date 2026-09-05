@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aravind Sekar — Product Designer &amp; Strategist</title>
+<title>Aravind Sekar | Product Designer &amp; Strategist</title>
 <meta name="description" content="Aravind Sekar is a Product Designer & Strategist from Chennai with 9+ years across UI/UX, product, print, and digital marketing.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2315171C'/%3E%3Ctext x='50' y='64' font-family='Georgia' font-size='46' fill='%23C8963E' text-anchor='middle'%3EAS%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,11 @@
       <a href="#contact">Contact</a>
     </nav>
     <div style="display:flex; align-items:center; gap: var(--sp-4);">
-      <a href="#contact" class="nav__cta">Let's talk</a>
+      <div class="nav__contact">
+        <a href="mailto:aravindzyn@gmail.com" class="nav__email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg> aravindzyn@gmail.com</a>
+        <a href="https://www.linkedin.com/in/meet-aravindsekar/" target="_blank" rel="noopener" class="nav__icon-link" aria-label="LinkedIn">in</a>
+        <a href="https://www.behance.net/iamaravindsekar" target="_blank" rel="noopener" class="nav__icon-link" aria-label="Behance">Be</a>
+      </div>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
     </div>
   </div>
@@ -42,7 +46,7 @@
           <span class="line"><span>I am Aravind</span></span>
         </h1>
         <p class="hero__role" data-hero-fade><span class="hero__role-text">UI/UX Designer</span></p>
-        <p class="lead hero__sub" data-hero-fade>9+ years across UI/UX, product design, print, and digital marketing — I build end-to-end design systems for SaaS platforms and pre-seed startups, and help teams modernise legacy workflows into something people actually enjoy using.</p>
+        <p class="lead hero__sub" data-hero-fade>9+ years across UI/UX, product design, print, and digital marketing. I build end-to-end design systems for SaaS platforms and pre-seed startups, and help teams modernise legacy workflows into something people actually enjoy using.</p>
         <div class="hero__actions" data-hero-fade>
           <a href="#work" class="btn btn--solid">View selected work</a>
           <a href="#contact" class="btn btn--ghost">Get in touch</a>
@@ -55,7 +59,7 @@
         </div>
       </div>
       <div class="hero__visual" data-hero-fade>
-        <span class="sticker sticker--1"><span class="dot"></span> UI/UX Design</span>
+        <span class="sticker sticker--1"><span class="dot"></span> User Research</span>
         <span class="sticker sticker--2"><span class="dot"></span> Design Systems</span>
         <span class="sticker sticker--3"><span class="dot"></span> Print &amp; Branding</span>
         <div class="hero__collage marked">
@@ -93,82 +97,88 @@
         <span class="eyebrow">Selected work</span>
         <h2>Six products, six different<br>problems worth solving.</h2>
       </div>
-      <p class="lead" style="max-width:36ch;">From mental health platforms to fintech and HR automation — case studies below cover research, process, and outcomes.</p>
+      <p class="lead" style="max-width:36ch;">From mental health platforms to fintech and HR automation, the case studies below cover research, process, and outcomes.</p>
     </div>
 
-    <div class="grid-work">
+    <div class="stack">
 
-      <a href="cogny-health.html" class="proj-card">
-        <div class="proj-card__media"><img src="assets/img/cogny/cover.jpg" alt="Cogny Health mental wellness app cover"></div>
-        <div class="proj-card__body">
-          <div class="proj-card__top">
-            <h3 class="proj-card__title">Cogny Health</h3>
-            <span class="proj-card__arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+      <div class="stack-card section--ink" style="top: 96px;">
+        <div class="stack-card__inner wrap">
+          <div class="stack-card__text">
+            <span class="stack-card__index">01 / 06</span>
+            <h3>Cogny Health</h3>
+            <p>A mental wellness marketplace built to bridge India's mental health care gap, reaching Tier 1–3 cities with therapy that doesn't cost a fortune.</p>
+            <div class="stack-card__tags"><span class="tag tag--teal">Mental Health</span><span class="tag">Founding Design Director</span></div>
+            <a href="cogny-health.html" class="btn btn--ghost stack-card__cta">View case study</a>
           </div>
-          <p class="proj-card__meta muted">Mental Health · Web &amp; Mobile App</p>
-          <div class="proj-card__tags"><span class="tag tag--teal">Founding Design Director</span></div>
+          <div class="stack-card__media"><img src="assets/img/cogny/cover.jpg" alt="Cogny Health mental wellness app cover"></div>
         </div>
-      </a>
+      </div>
 
-      <a href="the-able-mind.html" class="proj-card">
-        <div class="proj-card__media"><img src="assets/img/theablemind/cover.jpg" alt="The Able Mind mobile app cover"></div>
-        <div class="proj-card__body">
-          <div class="proj-card__top">
-            <h3 class="proj-card__title">The Able Mind</h3>
-            <span class="proj-card__arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+      <div class="stack-card section--ink" style="top: 118px;">
+        <div class="stack-card__inner wrap">
+          <div class="stack-card__text">
+            <span class="stack-card__index">02 / 06</span>
+            <h3>The Able Mind</h3>
+            <p>24/7 mental health support through affordable, anonymous counselling: chat therapy, peer groups, and self-help tools for a busy, stigma-heavy world.</p>
+            <div class="stack-card__tags"><span class="tag tag--teal">Mental Health</span><span class="tag">Ongoing since 2022</span></div>
+            <a href="the-able-mind.html" class="btn btn--ghost stack-card__cta">View case study</a>
           </div>
-          <p class="proj-card__meta muted">Mental Health · Mobile App</p>
-          <div class="proj-card__tags"><span class="tag tag--gold">Ongoing since 2022</span></div>
+          <div class="stack-card__media"><img src="assets/img/theablemind/cover.jpg" alt="The Able Mind mobile app cover"></div>
         </div>
-      </a>
+      </div>
 
-      <a href="accountd.html" class="proj-card">
-        <div class="proj-card__media"><img src="assets/img/accountd/cover.jpg" alt="Accountd fintech app cover"></div>
-        <div class="proj-card__body">
-          <div class="proj-card__top">
-            <h3 class="proj-card__title">Accountd</h3>
-            <span class="proj-card__arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+      <div class="stack-card section--ink" style="top: 140px;">
+        <div class="stack-card__inner wrap">
+          <div class="stack-card__text">
+            <span class="stack-card__index">03 / 06</span>
+            <h3>Accountd</h3>
+            <p>Putting an accountant in your pocket, easing the last mile of bill and invoice collection so a CA firm can file GST and TDS on time, every time.</p>
+            <div class="stack-card__tags"><span class="tag tag--teal">Fin Tech</span><span class="tag">GST &amp; TDS compliance</span></div>
+            <a href="accountd.html" class="btn btn--ghost stack-card__cta">View case study</a>
           </div>
-          <p class="proj-card__meta muted">Fin Tech · Mobile &amp; Web App</p>
-          <div class="proj-card__tags"><span class="tag">GST &amp; TDS compliance</span></div>
+          <div class="stack-card__media"><img src="assets/img/accountd/cover.jpg" alt="Accountd fintech app cover"></div>
         </div>
-      </a>
+      </div>
 
-      <a href="volunteer-link.html" class="proj-card">
-        <div class="proj-card__media"><img src="assets/img/volunteerlink/cover.jpg" alt="Volunteer Link mobile app cover"></div>
-        <div class="proj-card__body">
-          <div class="proj-card__top">
-            <h3 class="proj-card__title">Volunteer Link</h3>
-            <span class="proj-card__arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+      <div class="stack-card section--ink" style="top: 162px;">
+        <div class="stack-card__inner wrap">
+          <div class="stack-card__text">
+            <span class="stack-card__index">04 / 06</span>
+            <h3>Volunteer Link</h3>
+            <p>Helping students across the USA discover, join, and track volunteering opportunities, then walk away with a credible portfolio for college admissions.</p>
+            <div class="stack-card__tags"><span class="tag tag--teal">Social Cause</span><span class="tag">0→1, US students</span></div>
+            <a href="volunteer-link.html" class="btn btn--ghost stack-card__cta">View case study</a>
           </div>
-          <p class="proj-card__meta muted">Social Cause · Mobile App</p>
-          <div class="proj-card__tags"><span class="tag">0→1, US students</span></div>
+          <div class="stack-card__media"><img src="assets/img/volunteerlink/cover.jpg" alt="Volunteer Link mobile app cover"></div>
         </div>
-      </a>
+      </div>
 
-      <a href="workativ.html" class="proj-card">
-        <div class="proj-card__media"><img src="assets/img/workativ/cover.jpg" alt="Workativ agentic AI platform cover"></div>
-        <div class="proj-card__body">
-          <div class="proj-card__top">
-            <h3 class="proj-card__title">Workativ</h3>
-            <span class="proj-card__arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+      <div class="stack-card section--ink" style="top: 184px;">
+        <div class="stack-card__inner wrap">
+          <div class="stack-card__text">
+            <span class="stack-card__index">05 / 06</span>
+            <h3>Workativ</h3>
+            <p>Redesigning the site for an agentic AI platform that cuts support costs by up to 60%, in a neo-brutalist language built to make a technical product feel tangible.</p>
+            <div class="stack-card__tags"><span class="tag tag--teal">Technology</span><span class="tag">Agentic AI, 25-day sprint</span></div>
+            <a href="workativ.html" class="btn btn--ghost stack-card__cta">View case study</a>
           </div>
-          <p class="proj-card__meta muted">Technology · Web App</p>
-          <div class="proj-card__tags"><span class="tag">Agentic AI, 25-day sprint</span></div>
+          <div class="stack-card__media"><img src="assets/img/workativ/cover.jpg" alt="Workativ agentic AI platform cover"></div>
         </div>
-      </a>
+      </div>
 
-      <a href="chronologix.html" class="proj-card">
-        <div class="proj-card__media"><img src="assets/img/chronologix/cover.jpg" alt="Chronologix HR automation platform cover"></div>
-        <div class="proj-card__body">
-          <div class="proj-card__top">
-            <h3 class="proj-card__title">Chronologix</h3>
-            <span class="proj-card__arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+      <div class="stack-card section--ink" style="top: 206px;">
+        <div class="stack-card__inner wrap">
+          <div class="stack-card__text">
+            <span class="stack-card__index">06 / 06</span>
+            <h3>Chronologix</h3>
+            <p>Redesigning a cloud HRMS so growing organisations can unify employee data, attendance, leave, performance, and payroll into one system people actually want to open.</p>
+            <div class="stack-card__tags"><span class="tag tag--teal">B2B</span><span class="tag">Platform redesign</span></div>
+            <a href="chronologix.html" class="btn btn--ghost stack-card__cta">View case study</a>
           </div>
-          <p class="proj-card__meta muted">B2B HR Tech · Web App</p>
-          <div class="proj-card__tags"><span class="tag">Platform redesign</span></div>
+          <div class="stack-card__media"><img src="assets/img/chronologix/cover.jpg" alt="Chronologix HR automation platform redesign cover"></div>
         </div>
-      </a>
+      </div>
 
     </div>
   </section>
@@ -183,18 +193,18 @@
     </div>
 
     <div class="tools-grid">
-      <div class="tool-cell"><img src="assets/img/shared/tool-figma.png" alt="Figma"><span>Figma</span></div>
-      <div class="tool-cell"><img src="assets/img/shared/tool-xd.png" alt="Adobe XD"><span>Adobe XD</span></div>
-      <div class="tool-cell"><img src="assets/img/shared/tool-illustrator.png" alt="Adobe Illustrator"><span>Illustrator</span></div>
-      <div class="tool-cell"><img src="assets/img/shared/tool-indesign.png" alt="Adobe InDesign"><span>InDesign</span></div>
-      <div class="tool-cell"><img src="assets/img/shared/tool-ps.png" alt="Adobe Photoshop"><span>Photoshop</span></div>
-      <div class="tool-cell"><img src="assets/img/shared/tool-framer.png" alt="Framer"><span>Framer</span></div>
-      <div class="tool-cell"><img src="assets/img/shared/tool-miro.png" alt="Miro"><span>Miro</span></div>
-      <div class="tool-cell"><img src="assets/img/shared/tool-wix.png" alt="Wix"><span>Wix</span></div>
-      <div class="tool-cell"><img src="assets/img/shared/tool-jira.png" alt="Jira"><span>Jira</span></div>
-      <div class="tool-cell"><img src="assets/img/shared/tool-asana.png" alt="Asana"><span>Asana</span></div>
-      <div class="tool-cell"><img src="assets/img/shared/tool-notion.png" alt="Notion"><span>Notion</span></div>
-      <div class="tool-cell"><img src="assets/img/shared/tool-chatgpt.png" alt="ChatGPT"><span>ChatGPT</span></div>
+      <div class="tool-cell"><span class="tool-icon"><img src="assets/img/shared/tool-figma.png" alt="Figma"></span><span class="tool-name">Figma</span></div>
+      <div class="tool-cell"><span class="tool-icon"><img src="assets/img/shared/tool-xd.png" alt="Adobe XD"></span><span class="tool-name">Adobe XD</span></div>
+      <div class="tool-cell"><span class="tool-icon"><img src="assets/img/shared/tool-illustrator.png" alt="Adobe Illustrator"></span><span class="tool-name">Illustrator</span></div>
+      <div class="tool-cell"><span class="tool-icon"><img src="assets/img/shared/tool-indesign.png" alt="Adobe InDesign"></span><span class="tool-name">InDesign</span></div>
+      <div class="tool-cell"><span class="tool-icon"><img src="assets/img/shared/tool-ps.png" alt="Adobe Photoshop"></span><span class="tool-name">Photoshop</span></div>
+      <div class="tool-cell"><span class="tool-icon"><img src="assets/img/shared/tool-framer.png" alt="Framer"></span><span class="tool-name">Framer</span></div>
+      <div class="tool-cell"><span class="tool-icon"><img src="assets/img/shared/tool-miro.png" alt="Miro"></span><span class="tool-name">Miro</span></div>
+      <div class="tool-cell"><span class="tool-icon"><img src="assets/img/shared/tool-wix.png" alt="Wix"></span><span class="tool-name">Wix</span></div>
+      <div class="tool-cell"><span class="tool-icon"><img src="assets/img/shared/tool-jira.png" alt="Jira"></span><span class="tool-name">Jira</span></div>
+      <div class="tool-cell"><span class="tool-icon"><img src="assets/img/shared/tool-asana.png" alt="Asana"></span><span class="tool-name">Asana</span></div>
+      <div class="tool-cell"><span class="tool-icon"><img src="assets/img/shared/tool-notion.png" alt="Notion"></span><span class="tool-name">Notion</span></div>
+      <div class="tool-cell"><span class="tool-icon"><img src="assets/img/shared/tool-chatgpt.png" alt="ChatGPT"></span><span class="tool-name">ChatGPT</span></div>
     </div>
 
     <div class="skill-pills">
@@ -231,7 +241,7 @@
             <span class="process__num">01</span>
             <div>
               <h3>Discover</h3>
-              <p class="muted">Stakeholder interviews, competitor research, and market scoping to frame the real problem — not just the one that was pitched.</p>
+              <p class="muted">Stakeholder interviews, competitor research, and market scoping to frame the real problem, not just the one that was pitched.</p>
             </div>
           </div>
 
@@ -239,7 +249,7 @@
             <span class="process__num">02</span>
             <div>
               <h3>Define</h3>
-              <p class="muted">Card sorting, personas, empathy maps, and information architecture — structuring how the system will actually work before it looks like anything.</p>
+              <p class="muted">Card sorting, personas, empathy maps, and information architecture: structuring how the system will actually work before it looks like anything.</p>
             </div>
           </div>
 
@@ -255,7 +265,7 @@
             <span class="process__num">04</span>
             <div>
               <h3>Design system</h3>
-              <p class="muted">Typography, color, components, and states — built to scale across web and mobile rather than redrawn screen by screen.</p>
+              <p class="muted">Typography, color, components, and states, built to scale across web and mobile rather than redrawn screen by screen.</p>
             </div>
           </div>
 
@@ -263,7 +273,7 @@
             <span class="process__num">05</span>
             <div>
               <h3>Interface</h3>
-              <p class="muted">High-fidelity screens, product illustrations, and marketing surfaces — designed module by module for easy handoff.</p>
+              <p class="muted">High-fidelity screens, product illustrations, and marketing surfaces, designed module by module for easy handoff.</p>
             </div>
           </div>
 
@@ -271,7 +281,7 @@
             <span class="process__num">06</span>
             <div>
               <h3>Test &amp; handoff</h3>
-              <p class="muted">Usability testing, stakeholder validation, and phase-by-phase handoff — with a design QA pass to protect the details in build.</p>
+              <p class="muted">Usability testing, stakeholder validation, and phase-by-phase handoff, with a design QA pass to protect the details in build.</p>
             </div>
           </div>
 
@@ -291,17 +301,17 @@
 
     <div class="testi is-active">
       <p>"Working with Aravind on The Able Mind was a game-changer. The way he simplified complex user journeys while keeping the interface intuitive and welcoming was outstanding. The end result not only looks beautiful but also feels effortless to navigate, and we've had incredible feedback from our users."</p>
-      <div class="testi__by"><span class="reg-dot" style="color:var(--gold)"></span> Rohini Rajeev — The Able Mind</div>
+      <div class="testi__by"><span class="reg-dot" style="color:var(--gold)"></span> Rohini Rajeev, The Able Mind</div>
     </div>
 
     <div class="testi">
       <p>"Creative designer with tons of valuable experience. He was pivotal in building our UI/UX product, coordinating with backend and other teams. He would be a great resource for any growing team looking to move to the next level."</p>
-      <div class="testi__by"><span class="reg-dot" style="color:var(--gold)"></span> Lawrence Roy — Cogny Health</div>
+      <div class="testi__by"><span class="reg-dot" style="color:var(--gold)"></span> Lawrence Roy, Cogny Health</div>
     </div>
 
     <div class="testi">
-      <p>"When we wanted to design labels for our oil packaging, we weren't very clear on how it should look, but we knew what message it should give customers. Aravind took the time to understand our needs, did his own research, and came up with amazing designs — even coordinating directly with the printers when things got confusing."</p>
-      <div class="testi__by"><span class="reg-dot" style="color:var(--gold)"></span> Himabindu Tankala — Co-founder, Thaipari</div>
+      <p>"When we wanted to design labels for our oil packaging, we weren't very clear on how it should look, but we knew what message it should give customers. Aravind took the time to understand our needs, did his own research, and came up with amazing designs, even coordinating directly with the printers when things got confusing."</p>
+      <div class="testi__by"><span class="reg-dot" style="color:var(--gold)"></span> Himabindu Tankala, Co-founder, Thaipari</div>
     </div>
 
     <div class="testi__dots"></div>
@@ -312,7 +322,7 @@
     <div class="section-head" style="margin-bottom: var(--sp-4);">
       <div>
         <span class="eyebrow">Also on the shelf</span>
-        <h2>More projects — brand,<br>print &amp; graphic design.</h2>
+        <h2>More projects: brand,<br>print &amp; graphic design.</h2>
       </div>
     </div>
 
@@ -331,7 +341,7 @@
           <div class="accordion__content">
             <img src="assets/img/thaipari/cover.jpg" alt="Thaipari organic oil brand packaging">
             <div>
-              <p class="muted">Brand identity and packaging design for a cold-pressed organic oil company — from logo concept to printed can labels, coordinated directly with the print vendor.</p>
+              <p class="muted">Brand identity and packaging design for a cold-pressed organic oil company, from logo concept to printed can labels, coordinated directly with the print vendor.</p>
               <a href="thaipari.html" class="btn btn--ghost" style="margin-top: var(--sp-3);">View project</a>
             </div>
           </div>
@@ -371,7 +381,7 @@
           <div class="accordion__content">
             <img src="assets/img/pycon/hero.jpg" alt="PyCon India 2024 design work">
             <div>
-              <p class="muted">Design workgroup lead for India's annual Python conference in Bengaluru — social media campaigns, print collateral, and event logistics design.</p>
+              <p class="muted">Design workgroup lead for India's annual Python conference in Bengaluru: social media campaigns, print collateral, and event logistics design.</p>
               <a href="pycon-india-2024.html" class="btn btn--ghost" style="margin-top: var(--sp-3);">View project</a>
             </div>
           </div>
@@ -388,8 +398,11 @@
         <div class="footer__cta">
           <span class="eyebrow">Get in touch</span>
           <h2>Let's build something<br>worth shipping.</h2>
-          <p class="lead" style="margin-top: var(--sp-4);">Based in Chennai, India — working with teams everywhere.</p>
-          <a href="mailto:aravindzyn@gmail.com" class="btn btn--solid" style="margin-top: var(--sp-5);">aravindzyn@gmail.com</a>
+          <p class="lead" style="margin-top: var(--sp-4);">Based in Chennai, India, working with teams everywhere.</p>
+          <div style="display:flex; gap: var(--sp-3); flex-wrap:wrap; margin-top: var(--sp-5);">
+            <a href="mailto:aravindzyn@gmail.com" class="btn btn--solid"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg> aravindzyn@gmail.com</a>
+            <a href="https://wa.me/918939728530" target="_blank" rel="noopener" class="btn btn--ghost"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> Chat on WhatsApp</a>
+          </div>
         </div>
         <div class="footer__col">
           <h4>Elsewhere</h4>
@@ -411,7 +424,7 @@
       </div>
       <div class="footer__bottom">
         <span>© 2026 Aravind Sekar. Product Designer &amp; Strategist, Chennai, India.</span>
-        <span>Built with care — and a few registration marks.</span>
+        <span>Built with care, and a few registration marks.</span>
       </div>
     </div>
   </footer>

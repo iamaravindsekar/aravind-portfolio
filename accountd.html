@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Accountd — Aravind Sekar</title>
+<title>Accountd | Aravind Sekar</title>
 <meta name="description" content="Case study: Accountd, a fintech app that eases GST and TDS compliance for CA firms and their clients, designed by Aravind Sekar.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2315171C'/%3E%3Ctext x='50' y='64' font-family='Georgia' font-size='46' fill='%23C8963E' text-anchor='middle'%3EAS%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,11 @@
       <a href="index.html#contact">Contact</a>
     </nav>
     <div style="display:flex; align-items:center; gap: var(--sp-4);">
-      <a href="index.html#contact" class="nav__cta">Let's talk</a>
+      <div class="nav__contact">
+        <a href="mailto:aravindzyn@gmail.com" class="nav__email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg> aravindzyn@gmail.com</a>
+        <a href="https://www.linkedin.com/in/meet-aravindsekar/" target="_blank" rel="noopener" class="nav__icon-link" aria-label="LinkedIn">in</a>
+        <a href="https://www.behance.net/iamaravindsekar" target="_blank" rel="noopener" class="nav__icon-link" aria-label="Behance">Be</a>
+      </div>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
     </div>
   </div>
@@ -40,7 +44,7 @@
       <span class="tag">UI/UX</span>
     </div>
     <h1>Accountd</h1>
-    <p class="lead" style="margin-top: var(--sp-4);">Putting an accountant in your pocket — easing the last mile of bill and invoice collection so a CA firm can file GST and TDS on time, every time.</p>
+    <p class="lead" style="margin-top: var(--sp-4);">Putting an accountant in your pocket, easing the last mile of bill and invoice collection so a CA firm can file GST and TDS on time, every time.</p>
 
     <div class="cs-hero__meta">
       <div><span class="label">Role</span><span class="val">Product Designer</span></div>
@@ -61,7 +65,7 @@
       <div>
         <h2>Paper-heavy compliance, without visibility</h2>
         <p class="muted">A CA firm with 20–25 years of experience needed an application to ease the last mile of bill and invoice collection from clients, in order to file GST accurately and on time. Traditional methods were slow, paper-heavy, and offered no real-time status.</p>
-        <figure class="cs-figure reveal"><img src="assets/img/accountd/about.jpg" alt="About Accountd — the problem it solves"><figcaption>The problem space Accountd was built to solve.</figcaption></figure>
+        <figure class="cs-figure reveal"><img src="assets/img/accountd/about.jpg" alt="About Accountd: the problem it solves"><figcaption>The problem space Accountd was built to solve.</figcaption></figure>
 
         <h3 style="margin-top:var(--sp-6);">Target users</h3>
         <ul>
@@ -90,19 +94,19 @@
 
         <h3 style="margin-top:var(--sp-6);">Flow decisions, resolved in Q&amp;A</h3>
         <ul>
-          <li><strong style="color:var(--ink)">Duplicate bills?</strong> Tagged "Rejected" by the accountant, with three possible reasons — wrong photo, illegible, or duplicate.</li>
+          <li><strong style="color:var(--ink)">Duplicate bills?</strong> Tagged "Rejected" by the accountant, with three possible reasons: wrong photo, illegible, or duplicate.</li>
           <li><strong style="color:var(--ink)">Rejection reason?</strong> An optional text box lets the accountant explain why.</li>
           <li><strong style="color:var(--ink)">Back button after a photo?</strong> Users can submit directly; navigating back requires a fresh photo.</li>
-          <li><strong style="color:var(--ink)">Multiple companies per user?</strong> Yes — each user can add and switch between multiple companies from the dashboard.</li>
+          <li><strong style="color:var(--ink)">Multiple companies per user?</strong> Yes. Each user can add and switch between multiple companies from the dashboard.</li>
         </ul>
 
         <h3 style="margin-top:var(--sp-6);">Brainstorming outcomes</h3>
         <ul>
           <li>Minimal UI on Google's Material Design 3 as the base system.</li>
           <li>Clean typography for trust and clarity across device platforms.</li>
-          <li>Colour-coded statuses — Accepted, Rejected, In Review, Needs Clarification, Accounted.</li>
-          <li>Modular dashboard — Home, Upload, Documents, Reports, Chat Support, Summaries.</li>
-          <li>Competitor analysis deprioritised for v1 — focus on shipping core features first.</li>
+          <li>Colour-coded statuses: Accepted, Rejected, In Review, Needs Clarification, Accounted.</li>
+          <li>Modular dashboard: Home, Upload, Documents, Reports, Chat Support, Summaries.</li>
+          <li>Competitor analysis was deprioritised for v1 to focus on shipping core features first.</li>
         </ul>
       </div>
     </div>
@@ -117,10 +121,10 @@
           <figure class="cs-figure reveal"><img src="assets/img/accountd/flow-business.jpg" alt="Business user app flows"><figcaption>Business app user flows.</figcaption></figure>
           <figure class="cs-figure reveal"><img src="assets/img/accountd/flow-accountant.jpg" alt="Accountant flows"><figcaption>Accountant flows.</figcaption></figure>
         </div>
-        <figure class="cs-figure reveal"><img src="assets/img/accountd/sketches.jpg" alt="Notebook sketches for Accountd app"><figcaption>Notebook sketches — early wireframing.</figcaption></figure>
+        <figure class="cs-figure reveal"><img src="assets/img/accountd/sketches.jpg" alt="Notebook sketches for Accountd app"><figcaption>Notebook sketches, early wireframing.</figcaption></figure>
         <figure class="cs-figure reveal"><img src="assets/img/accountd/design-language.jpg" alt="Accountd design language"><figcaption>Design language.</figcaption></figure>
-        <figure class="cs-figure reveal"><img src="assets/img/accountd/app-screens.jpg" alt="Accountd business user mobile app screens"><figcaption>Business user interface — mobile app.</figcaption></figure>
-        <figure class="cs-figure reveal"><img src="assets/img/accountd/web-screens.jpg" alt="Accountd accountant admin web interface"><figcaption>Accountant / admin interface — web.</figcaption></figure>
+        <figure class="cs-figure reveal"><img src="assets/img/accountd/app-screens.jpg" alt="Accountd business user mobile app screens"><figcaption>Business user interface, mobile app.</figcaption></figure>
+        <figure class="cs-figure reveal"><img src="assets/img/accountd/web-screens.jpg" alt="Accountd accountant admin web interface"><figcaption>Accountant / admin interface, web.</figcaption></figure>
 
         <div class="cs-video reveal">
           <video controls preload="metadata" poster="assets/img/accountd/app-screens.jpg">
@@ -167,7 +171,7 @@
 
   <section class="section--tight wrap">
     <div class="section-head" style="margin-bottom: var(--sp-4);">
-      <div><span class="eyebrow">Also on the shelf</span><h2>More projects — brand, print &amp; graphic design.</h2></div>
+      <div><span class="eyebrow">Also on the shelf</span><h2>More projects: brand, print &amp; graphic design.</h2></div>
     </div>
     <div class="accordion">
       <div class="accordion__item">
@@ -209,7 +213,10 @@
         <div class="footer__cta">
           <span class="eyebrow">Get in touch</span>
           <h2>Let's build something<br>worth shipping.</h2>
-          <a href="mailto:aravindzyn@gmail.com" class="btn btn--solid" style="margin-top: var(--sp-5);">aravindzyn@gmail.com</a>
+          <div style="display:flex; gap: var(--sp-3); flex-wrap:wrap; margin-top: var(--sp-5);">
+            <a href="mailto:aravindzyn@gmail.com" class="btn btn--solid"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg> aravindzyn@gmail.com</a>
+            <a href="https://wa.me/918939728530" target="_blank" rel="noopener" class="btn btn--ghost"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> Chat on WhatsApp</a>
+          </div>
         </div>
         <div class="footer__col">
           <h4>Elsewhere</h4>
@@ -226,7 +233,7 @@
       </div>
       <div class="footer__bottom">
         <span>© 2026 Aravind Sekar. Product Designer &amp; Strategist, Chennai, India.</span>
-        <span>Built with care — and a few registration marks.</span>
+        <span>Built with care, and a few registration marks.</span>
       </div>
     </div>
   </footer>
