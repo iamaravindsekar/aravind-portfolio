@@ -356,7 +356,8 @@ h3{ font-size: var(--fs-h3); line-height: 1.2; }
 .badge .reg-dot{ width:6px; height:6px; color: var(--teal); }
 .hero h1{ font-size: var(--fs-hero); }
 .hero h1 .line{ display:block; overflow: hidden; }
-.hero h1 .line span{ display:block; }
+.hero h1 .line span{ display:block; transform: translateY(140px); }
+[data-hero-fade]{ opacity: 0; transform: translateY(16px); }
 .hero__role{
   margin-top: var(--sp-3);
   font-family: var(--font-display);

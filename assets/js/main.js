@@ -32,27 +32,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- Hero entrance (one orchestrated moment) ---------- */
   const heroLines = document.querySelectorAll('.hero h1 .line span');
+  const heroFade = document.querySelectorAll('[data-hero-fade]');
   if (heroLines.length && window.gsap && !prefersReduced) {
-    gsap.set(heroLines, { yPercent: 110 });
     const tl = gsap.timeline({ delay: 0.15 });
     tl.to(heroLines, {
-      yPercent: 0,
+      y: 0,
       duration: 1,
       stagger: 0.09,
       ease: 'expo.out'
     });
-    const heroFade = document.querySelectorAll('[data-hero-fade]');
     if (heroFade.length) {
-      tl.from(heroFade, {
-        opacity: 0,
-        y: 16,
+      tl.to(heroFade, {
+        opacity: 1,
+        y: 0,
         duration: 0.7,
         stagger: 0.08,
         ease: 'power2.out'
       }, '-=0.5');
     }
-  } else if (heroLines.length) {
+  } else {
+    // No GSAP (blocked/failed to load) or reduced motion: show immediately, no animation
     heroLines.forEach(el => el.style.transform = 'none');
+    heroFade.forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; });
   }
 
   /* ---------- Hero role-text rotator ---------- */
