@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Able Mind — Aravind Sekar</title>
+<meta name="description" content="Case study: The Able Mind, an on-demand mental health support app designed by Aravind Sekar.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2315171C'/%3E%3Ctext x='50' y='64' font-family='Georgia' font-size='46' fill='%23C8963E' text-anchor='middle'%3EAS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Bricolage+Grotesque:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand"><img src="assets/img/shared/logo-mark.png" alt="Aravind Sekar" class="nav__logo"></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#process">Process</a>
+      <a href="index.html#tools">Skillset</a>
+      <a href="index.html#testimonials">Testimonials</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap: var(--sp-4);">
+      <a href="index.html#contact" class="nav__cta">Let's talk</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="cs-hero wrap">
+    <div class="cs-hero__tags">
+      <span class="tag tag--teal">Mental Health</span>
+      <span class="tag">Case Study</span>
+      <span class="tag">Mobile App</span>
+      <span class="tag">UI/UX</span>
+    </div>
+    <h1>The Able Mind</h1>
+    <p class="lead" style="margin-top: var(--sp-4);">24/7 mental health support through affordable, anonymous counselling — 15-minute chat therapy, peer groups, and self-help tools built to fit into a busy, stigma-heavy world.</p>
+
+    <div class="cs-hero__meta">
+      <div><span class="label">Role</span><span class="val">Product Designer</span></div>
+      <div><span class="label">Timeline</span><span class="val">May 2022 – Present</span></div>
+      <div><span class="label">Deliverables</span><span class="val">Responsive Mobile App</span></div>
+      <div><span class="label">Industry</span><span class="val">Mental Health</span></div>
+    </div>
+
+    <div class="cs-cover marked">
+      <span class="rm rm--tl rm-color"></span><span class="rm rm--tr rm-color"></span>
+      <img src="assets/img/theablemind/cover.jpg" alt="The Able Mind app cover">
+    </div>
+  </section>
+
+  <section class="cs-block wrap">
+    <div class="cs-block__grid">
+      <span class="cs-block__label">Overview</span>
+      <div>
+        <h2>Confidential therapy, without the friction</h2>
+        <p class="muted">The Able Mind is a digital mental health platform focused on accessible, affordable, and confidential online therapy. It caters primarily to Indian users but reaches a wider audience through text-based counselling, self-help tools, and community features available in multiple Indian languages.</p>
+
+        <h3 style="margin-top:var(--sp-6);">Problem statement</h3>
+        <ul>
+          <li>Mental health stigma and lack of accessible therapy were barriers for many users in India.</li>
+          <li>Time constraints and language barriers prevented in-person therapy.</li>
+          <li>Few resources existed beyond just access to therapy itself.</li>
+          <li>Users needed confidential, easy-to-use support tools for anxiety, depression, stress, and relationships.</li>
+        </ul>
+
+        <h3 style="margin-top:var(--sp-6);">Goals</h3>
+        <ul>
+          <li>Provide affordable, anonymous, and easy access to professional counsellors.</li>
+          <li>Enable proactive mental health self-care through wellness tools.</li>
+          <li>Foster peer community support within a safe environment.</li>
+          <li>Design an engaging, intuitive experience that maximises retention and impact.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-block wrap">
+    <div class="cs-block__grid">
+      <span class="cs-block__label">Research</span>
+      <div>
+        <h2>Discovery &amp; information architecture</h2>
+        <p class="muted">User interviews reported stigma and time constraints as major barriers. Competitive analysis showed gaps in affordability and anonymity across existing counselling options — and app usage data showed a clear desire for immediate, text-based counselling and easy-to-understand self-help resources.</p>
+        <p class="muted" style="margin-top:var(--sp-3);">Navigation was split clearly into Therapy Chat, Wellness Tools (journaling, mood tracking), Community, and Resources — with a simple onboarding flow and a clear free-trial explanation.</p>
+        <figure class="cs-figure reveal"><img src="assets/img/theablemind/ia.jpg" alt="The Able Mind information architecture, release v1.0"><figcaption>Information architecture — happy flow, release v1.0.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-block wrap">
+    <div class="cs-block__grid">
+      <span class="cs-block__label">Design</span>
+      <div>
+        <h2>Visual &amp; interaction design</h2>
+        <ul>
+          <li>Calming blues and greens supporting a soothing emotional experience.</li>
+          <li>Large, simple buttons with clear labels for accessibility and ease of use.</li>
+          <li>Multi-language support for inclusivity.</li>
+          <li>Design system built on Google Material Design 3.</li>
+        </ul>
+
+        <h3 style="margin-top:var(--sp-6);">Key features</h3>
+        <ul>
+          <li>Live chat therapy with qualified counsellors, available in multiple languages.</li>
+          <li>Anonymous therapy over text for ongoing communication.</li>
+          <li>Peer support groups to foster community and shared experience.</li>
+          <li>Journaling, mood, anxiety, and habit trackers to help users spot patterns.</li>
+          <li>A resource hub — articles, meditation guides, calming music, mental health assessments.</li>
+          <li>Community sharing for anonymous storytelling.</li>
+        </ul>
+        <figure class="cs-figure reveal"><img src="assets/img/theablemind/features.jpg" alt="The Able Mind key features"><figcaption>Core feature set.</figcaption></figure>
+        <figure class="cs-figure reveal"><img src="assets/img/theablemind/screens.jpg" alt="The Able Mind app UI screens, V1"><figcaption>App UI, V1 — the Auxie mascot version.</figcaption></figure>
+
+        <div class="cs-video reveal">
+          <video controls preload="metadata" poster="assets/img/theablemind/screens.jpg">
+            <source src="assets/video/theablemind-demo.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-block wrap">
+    <div class="cs-block__grid">
+      <span class="cs-block__label">Outcomes</span>
+      <div>
+        <h2>Metrics &amp; impact</h2>
+        <table class="cs-table">
+          <tr><th>Metric</th><th>Value / impact</th></tr>
+          <tr><td>App downloads</td><td>Thousands across iOS and Android</td></tr>
+          <tr><td>Free trial activation</td><td>Strong initial uptake driving engagement</td></tr>
+          <tr><td>Subscription conversion</td><td>Strong conversion from trial to paid plans</td></tr>
+          <tr><td>User retention</td><td>High, attributed to valuable counselling &amp; tools</td></tr>
+          <tr><td>Mood / anxiety improvement</td><td>Measurable decrease in PHQ-9 and GAD-7 scores over time</td></tr>
+          <tr><td>User satisfaction</td><td>~4+ star app store ratings</td></tr>
+        </table>
+
+        <h3>Challenges</h3>
+        <ul>
+          <li>Encouraging sustained habit formation in mental health self-care.</li>
+          <li>Balancing anonymity with effective therapist–user connection.</li>
+          <li>Addressing diverse linguistic and cultural needs across India.</li>
+        </ul>
+
+        <h3>Evolving the product — V3.5 to V7.3</h3>
+        <ul>
+          <li>Introduced a user preferences dashboard and a new landing-screen carousel.</li>
+          <li>Added AI chat assistant, community connections, habit tracker, journal, mood tracker, and gift-a-subscription.</li>
+          <li>Retired the Auxie mascot and the lilac colour code in later releases as the brand matured.</li>
+        </ul>
+
+        <p style="margin-top:var(--sp-5);"><a href="https://theablemind.com/the-able-mind-mobile-app.php" target="_blank" rel="noopener" class="btn btn--ghost">Visit The Able Mind →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="cs-nav wrap" style="padding-inline:0;">
+    <a href="cogny-health.html" class="cs-nav__link"><span class="cs-nav__label">← Previous</span><span class="cs-nav__title">Cogny Health</span></a>
+    <a href="accountd.html" class="cs-nav__link cs-nav__link--next"><span class="cs-nav__label">Next project →</span><span class="cs-nav__title">Accountd</span></a>
+  </nav>
+
+  <section class="section--tight wrap">
+    <div class="section-head" style="margin-bottom: var(--sp-4);">
+      <div><span class="eyebrow">Also on the shelf</span><h2>More projects — brand, print &amp; graphic design.</h2></div>
+    </div>
+    <div class="accordion">
+      <div class="accordion__item">
+        <button class="accordion__trigger" aria-expanded="false">
+          <span class="accordion__trigger-left"><span class="accordion__num">01</span><span class="accordion__title">Thaipari</span><span class="tag" style="margin-left:8px;">Brand Identity · Print</span></span>
+          <span class="accordion__plus"></span>
+        </button>
+        <div class="accordion__panel"><div class="accordion__panel-inner"><div class="accordion__content">
+          <img src="assets/img/thaipari/cover.jpg" alt="Thaipari organic oil brand packaging">
+          <div><p class="muted">Brand identity and packaging design for a cold-pressed organic oil company.</p><a href="thaipari.html" class="btn btn--ghost" style="margin-top: var(--sp-3);">View project</a></div>
+        </div></div></div>
+      </div>
+      <div class="accordion__item">
+        <button class="accordion__trigger" aria-expanded="false">
+          <span class="accordion__trigger-left"><span class="accordion__num">02</span><span class="accordion__title">Aqualisse</span><span class="tag" style="margin-left:8px;">Graphic Design</span></span>
+          <span class="accordion__plus"></span>
+        </button>
+        <div class="accordion__panel"><div class="accordion__panel-inner"><div class="accordion__content">
+          <img src="assets/img/aqualisse/cover.jpg" alt="Aqualisse premium water bottle branding">
+          <div><p class="muted">Brand identity and premium packaging design for a water bottle manufacturer.</p><a href="aqualisse.html" class="btn btn--ghost" style="margin-top: var(--sp-3);">View project</a></div>
+        </div></div></div>
+      </div>
+      <div class="accordion__item">
+        <button class="accordion__trigger" aria-expanded="false">
+          <span class="accordion__trigger-left"><span class="accordion__num">03</span><span class="accordion__title">PyCon India 2024</span><span class="tag" style="margin-left:8px;">Graphic Design</span></span>
+          <span class="accordion__plus"></span>
+        </button>
+        <div class="accordion__panel"><div class="accordion__panel-inner"><div class="accordion__content">
+          <img src="assets/img/pycon/hero.jpg" alt="PyCon India 2024 design work">
+          <div><p class="muted">Design workgroup lead for India's annual Python conference in Bengaluru.</p><a href="pycon-india-2024.html" class="btn btn--ghost" style="margin-top: var(--sp-3);">View project</a></div>
+        </div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer section--ink">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__cta">
+          <span class="eyebrow">Get in touch</span>
+          <h2>Let's build something<br>worth shipping.</h2>
+          <a href="mailto:aravindzyn@gmail.com" class="btn btn--solid" style="margin-top: var(--sp-5);">aravindzyn@gmail.com</a>
+        </div>
+        <div class="footer__col">
+          <h4>Elsewhere</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/meet-aravindsekar/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.behance.net/iamaravindsekar" target="_blank" rel="noopener">Behance</a></li>
+            <li><a href="mailto:aravindzyn@gmail.com">Email</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Open for</h4>
+          <ul><li>Full-time roles</li><li>Freelance projects</li><li>Mentoring</li><li>Workshop / speaking</li></ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Aravind Sekar. Product Designer &amp; Strategist, Chennai, India.</span>
+        <span>Built with care — and a few registration marks.</span>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

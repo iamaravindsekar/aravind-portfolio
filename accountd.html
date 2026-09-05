@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accountd — Aravind Sekar</title>
+<meta name="description" content="Case study: Accountd, a fintech app that eases GST and TDS compliance for CA firms and their clients, designed by Aravind Sekar.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2315171C'/%3E%3Ctext x='50' y='64' font-family='Georgia' font-size='46' fill='%23C8963E' text-anchor='middle'%3EAS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Bricolage+Grotesque:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand"><img src="assets/img/shared/logo-mark.png" alt="Aravind Sekar" class="nav__logo"></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#process">Process</a>
+      <a href="index.html#tools">Skillset</a>
+      <a href="index.html#testimonials">Testimonials</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap: var(--sp-4);">
+      <a href="index.html#contact" class="nav__cta">Let's talk</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="cs-hero wrap">
+    <div class="cs-hero__tags">
+      <span class="tag tag--teal">Fin Tech</span>
+      <span class="tag">Mobile App</span>
+      <span class="tag">Web App</span>
+      <span class="tag">UI/UX</span>
+    </div>
+    <h1>Accountd</h1>
+    <p class="lead" style="margin-top: var(--sp-4);">Putting an accountant in your pocket — easing the last mile of bill and invoice collection so a CA firm can file GST and TDS on time, every time.</p>
+
+    <div class="cs-hero__meta">
+      <div><span class="label">Role</span><span class="val">Product Designer</span></div>
+      <div><span class="label">Deliverables</span><span class="val">Android, iOS, Web Admin</span></div>
+      <div><span class="label">Reviewed by</span><span class="val">Practising CAs</span></div>
+      <div><span class="label">Industry</span><span class="val">Fin Tech</span></div>
+    </div>
+
+    <div class="cs-cover marked">
+      <span class="rm rm--tl rm-color"></span><span class="rm rm--tr rm-color"></span>
+      <img src="assets/img/accountd/cover.jpg" alt="Accountd app cover">
+    </div>
+  </section>
+
+  <section class="cs-block wrap">
+    <div class="cs-block__grid">
+      <span class="cs-block__label">Problem</span>
+      <div>
+        <h2>Paper-heavy compliance, without visibility</h2>
+        <p class="muted">A CA firm with 20–25 years of experience needed an application to ease the last mile of bill and invoice collection from clients, in order to file GST accurately and on time. Traditional methods were slow, paper-heavy, and offered no real-time status.</p>
+        <figure class="cs-figure reveal"><img src="assets/img/accountd/about.jpg" alt="About Accountd — the problem it solves"><figcaption>The problem space Accountd was built to solve.</figcaption></figure>
+
+        <h3 style="margin-top:var(--sp-6);">Target users</h3>
+        <ul>
+          <li>Existing client companies of the CA firm.</li>
+          <li>Startups and SMEs.</li>
+          <li>Individuals managing GST or TDS compliance.</li>
+        </ul>
+
+        <h3 style="margin-top:var(--sp-6);">Objectives</h3>
+        <ul>
+          <li>Make financial document management simple and mobile-friendly.</li>
+          <li>Provide workflow transparency through document status tracking.</li>
+          <li>Enable direct communication with accountants to resolve queries.</li>
+          <li>Offer automated compliance reports with minimal manual effort.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-block wrap">
+    <div class="cs-block__grid">
+      <span class="cs-block__label">UX research</span>
+      <div>
+        <h2>Whiteboarding &amp; flow decisions</h2>
+        <figure class="cs-figure reveal"><img src="assets/img/accountd/whiteboard.jpg" alt="Accountd whiteboarding and brainstorming"><figcaption>Whiteboarding and brainstorming.</figcaption></figure>
+
+        <h3 style="margin-top:var(--sp-6);">Flow decisions, resolved in Q&amp;A</h3>
+        <ul>
+          <li><strong style="color:var(--ink)">Duplicate bills?</strong> Tagged "Rejected" by the accountant, with three possible reasons — wrong photo, illegible, or duplicate.</li>
+          <li><strong style="color:var(--ink)">Rejection reason?</strong> An optional text box lets the accountant explain why.</li>
+          <li><strong style="color:var(--ink)">Back button after a photo?</strong> Users can submit directly; navigating back requires a fresh photo.</li>
+          <li><strong style="color:var(--ink)">Multiple companies per user?</strong> Yes — each user can add and switch between multiple companies from the dashboard.</li>
+        </ul>
+
+        <h3 style="margin-top:var(--sp-6);">Brainstorming outcomes</h3>
+        <ul>
+          <li>Minimal UI on Google's Material Design 3 as the base system.</li>
+          <li>Clean typography for trust and clarity across device platforms.</li>
+          <li>Colour-coded statuses — Accepted, Rejected, In Review, Needs Clarification, Accounted.</li>
+          <li>Modular dashboard — Home, Upload, Documents, Reports, Chat Support, Summaries.</li>
+          <li>Competitor analysis deprioritised for v1 — focus on shipping core features first.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-block wrap">
+    <div class="cs-block__grid">
+      <span class="cs-block__label">Design process</span>
+      <div>
+        <h2>Information architecture → wireframes → design language → interface</h2>
+        <div class="cs-two-col">
+          <figure class="cs-figure reveal"><img src="assets/img/accountd/flow-business.jpg" alt="Business user app flows"><figcaption>Business app user flows.</figcaption></figure>
+          <figure class="cs-figure reveal"><img src="assets/img/accountd/flow-accountant.jpg" alt="Accountant flows"><figcaption>Accountant flows.</figcaption></figure>
+        </div>
+        <figure class="cs-figure reveal"><img src="assets/img/accountd/sketches.jpg" alt="Notebook sketches for Accountd app"><figcaption>Notebook sketches — early wireframing.</figcaption></figure>
+        <figure class="cs-figure reveal"><img src="assets/img/accountd/design-language.jpg" alt="Accountd design language"><figcaption>Design language.</figcaption></figure>
+        <figure class="cs-figure reveal"><img src="assets/img/accountd/app-screens.jpg" alt="Accountd business user mobile app screens"><figcaption>Business user interface — mobile app.</figcaption></figure>
+        <figure class="cs-figure reveal"><img src="assets/img/accountd/web-screens.jpg" alt="Accountd accountant admin web interface"><figcaption>Accountant / admin interface — web.</figcaption></figure>
+
+        <div class="cs-video reveal">
+          <video controls preload="metadata" poster="assets/img/accountd/app-screens.jpg">
+            <source src="assets/video/accountd-demo.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-block wrap">
+    <div class="cs-block__grid">
+      <span class="cs-block__label">Outcomes</span>
+      <div>
+        <h2>Impact &amp; potential</h2>
+        <ul>
+          <li>Reduced back-and-forth emails and calls with accountants.</li>
+          <li>Transparent tracking minimised document confusion.</li>
+          <li>Faster GST/TDS filings backed by accurate records.</li>
+          <li>Human-centred chat integration built trust and ease of access.</li>
+        </ul>
+
+        <div class="cs-metrics">
+          <div class="cs-metric"><span class="num">35%</span><span class="lbl">Less time spent uploading &amp; tracking documents</span></div>
+          <div class="cs-metric"><span class="num">60%</span><span class="lbl">Faster GST/TDS report preparation</span></div>
+          <div class="cs-metric"><span class="num">40%</span><span class="lbl">Fewer errors via real-time review &amp; chat</span></div>
+        </div>
+        <p class="muted" style="margin-top:var(--sp-4);">Projected growth: 100,000+ SMEs and freelancers could adopt Accountd within two years, saving roughly 2.5M work hours annually.</p>
+
+        <h3 style="margin-top:var(--sp-6);">Learnings &amp; next steps</h3>
+        <ul>
+          <li>Users requested reminders for pending document uploads.</li>
+          <li>A payment gateway needs to be integrated for accounting services.</li>
+          <li>Future scope: AI-powered invoice categorisation and anomaly detection.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <nav class="cs-nav wrap" style="padding-inline:0;">
+    <a href="the-able-mind.html" class="cs-nav__link"><span class="cs-nav__label">← Previous</span><span class="cs-nav__title">The Able Mind</span></a>
+    <a href="volunteer-link.html" class="cs-nav__link cs-nav__link--next"><span class="cs-nav__label">Next project →</span><span class="cs-nav__title">Volunteer Link</span></a>
+  </nav>
+
+  <section class="section--tight wrap">
+    <div class="section-head" style="margin-bottom: var(--sp-4);">
+      <div><span class="eyebrow">Also on the shelf</span><h2>More projects — brand, print &amp; graphic design.</h2></div>
+    </div>
+    <div class="accordion">
+      <div class="accordion__item">
+        <button class="accordion__trigger" aria-expanded="false">
+          <span class="accordion__trigger-left"><span class="accordion__num">01</span><span class="accordion__title">Thaipari</span><span class="tag" style="margin-left:8px;">Brand Identity · Print</span></span>
+          <span class="accordion__plus"></span>
+        </button>
+        <div class="accordion__panel"><div class="accordion__panel-inner"><div class="accordion__content">
+          <img src="assets/img/thaipari/cover.jpg" alt="Thaipari organic oil brand packaging">
+          <div><p class="muted">Brand identity and packaging design for a cold-pressed organic oil company.</p><a href="thaipari.html" class="btn btn--ghost" style="margin-top: var(--sp-3);">View project</a></div>
+        </div></div></div>
+      </div>
+      <div class="accordion__item">
+        <button class="accordion__trigger" aria-expanded="false">
+          <span class="accordion__trigger-left"><span class="accordion__num">02</span><span class="accordion__title">Aqualisse</span><span class="tag" style="margin-left:8px;">Graphic Design</span></span>
+          <span class="accordion__plus"></span>
+        </button>
+        <div class="accordion__panel"><div class="accordion__panel-inner"><div class="accordion__content">
+          <img src="assets/img/aqualisse/cover.jpg" alt="Aqualisse premium water bottle branding">
+          <div><p class="muted">Brand identity and premium packaging design for a water bottle manufacturer.</p><a href="aqualisse.html" class="btn btn--ghost" style="margin-top: var(--sp-3);">View project</a></div>
+        </div></div></div>
+      </div>
+      <div class="accordion__item">
+        <button class="accordion__trigger" aria-expanded="false">
+          <span class="accordion__trigger-left"><span class="accordion__num">03</span><span class="accordion__title">PyCon India 2024</span><span class="tag" style="margin-left:8px;">Graphic Design</span></span>
+          <span class="accordion__plus"></span>
+        </button>
+        <div class="accordion__panel"><div class="accordion__panel-inner"><div class="accordion__content">
+          <img src="assets/img/pycon/hero.jpg" alt="PyCon India 2024 design work">
+          <div><p class="muted">Design workgroup lead for India's annual Python conference in Bengaluru.</p><a href="pycon-india-2024.html" class="btn btn--ghost" style="margin-top: var(--sp-3);">View project</a></div>
+        </div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer section--ink">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__cta">
+          <span class="eyebrow">Get in touch</span>
+          <h2>Let's build something<br>worth shipping.</h2>
+          <a href="mailto:aravindzyn@gmail.com" class="btn btn--solid" style="margin-top: var(--sp-5);">aravindzyn@gmail.com</a>
+        </div>
+        <div class="footer__col">
+          <h4>Elsewhere</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/meet-aravindsekar/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.behance.net/iamaravindsekar" target="_blank" rel="noopener">Behance</a></li>
+            <li><a href="mailto:aravindzyn@gmail.com">Email</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Open for</h4>
+          <ul><li>Full-time roles</li><li>Freelance projects</li><li>Mentoring</li><li>Workshop / speaking</li></ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Aravind Sekar. Product Designer &amp; Strategist, Chennai, India.</span>
+        <span>Built with care — and a few registration marks.</span>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
