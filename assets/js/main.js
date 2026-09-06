@@ -23,10 +23,17 @@ document.addEventListener('DOMContentLoaded', () => {
   if (navToggle && navLinks) {
     navToggle.addEventListener('click', () => {
       const open = navLinks.classList.toggle('is-open');
+      navToggle.classList.toggle('is-active', open);
       navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Toggle menu');
     });
     navLinks.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => navLinks.classList.remove('is-open'));
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('is-open');
+        navToggle.classList.remove('is-active');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Toggle menu');
+      });
     });
   }
 
