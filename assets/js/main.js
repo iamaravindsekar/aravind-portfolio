@@ -28,11 +28,26 @@ document.addEventListener('DOMContentLoaded', () => {
       navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Toggle menu');
     });
     navLinks.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
+      a.addEventListener('click', (e) => {
+        const href = a.getAttribute('href') || '';
+        const isSamePageAnchor = href.startsWith('#');
+        const targetId = isSamePageAnchor ? href.slice(1) : null;
+        const targetEl = targetId ? document.getElementById(targetId) : null;
+
         navLinks.classList.remove('is-open');
         navToggle.classList.remove('is-active');
         navToggle.setAttribute('aria-expanded', 'false');
         navToggle.setAttribute('aria-label', 'Toggle menu');
+
+        // For same-page anchors, wait for the close transition to finish
+        // before scrolling, so the panel is fully off-screen first and
+        // never overlaps with a scroll-triggered mobile toolbar change.
+        if (isSamePageAnchor && targetEl) {
+          e.preventDefault();
+          setTimeout(() => {
+            targetEl.scrollIntoView({ behavior: prefersReduced ? 'auto' : 'smooth' });
+          }, 480);
+        }
       });
     });
   }

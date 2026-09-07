@@ -296,6 +296,8 @@ h3{ font-size: var(--fs-h3); line-height: 1.2; }
   .nav__links{
     position: fixed; inset: 0 0 0 auto;
     width: min(78vw, 340px);
+    height: 100vh;
+    height: 100dvh;
     background: var(--ink); color: var(--paper);
     flex-direction: column;
     justify-content: center;
@@ -306,6 +308,7 @@ h3{ font-size: var(--fs-h3); line-height: 1.2; }
     font-size: 1.4rem;
     font-family: var(--font-display);
     z-index: 1;
+    overflow-y: auto;
   }
   .nav__links.is-open{ transform: translateX(0); }
   .nav__toggle{ display: flex; }
@@ -481,16 +484,22 @@ h3{ font-size: var(--fs-h3); line-height: 1.2; }
 .stack-card__inner{
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
-  align-items: center;
-  gap: var(--sp-6);
+  grid-template-areas:
+    "index media"
+    "text  media";
+  align-items: start;
+  column-gap: var(--sp-6);
+  row-gap: var(--sp-3);
   padding: var(--sp-7) var(--sp-6);
 }
 .stack-card__index{
+  grid-area: index;
   font-family: var(--font-display);
   color: var(--gold);
   font-size: 0.95rem;
   letter-spacing: 0.02em;
 }
+.stack-card__text{ grid-area: text; }
 .stack-card__text h3{
   font-size: clamp(1.9rem, 3.2vw, 2.7rem);
   margin-block: var(--sp-3);
@@ -502,6 +511,8 @@ h3{ font-size: var(--fs-h3); line-height: 1.2; }
 .stack-card__tags{ display:flex; gap:0.4em; flex-wrap:wrap; margin-top: var(--sp-4); }
 .stack-card__cta{ margin-top: var(--sp-6); }
 .stack-card__media{
+  grid-area: media;
+  align-self: center;
   border-radius: 14px;
   overflow: hidden;
   aspect-ratio: 2300 / 1240;
@@ -516,8 +527,14 @@ h3{ font-size: var(--fs-h3); line-height: 1.2; }
 .section--ink .tag{ color: color-mix(in srgb, var(--paper) 82%, transparent); border-color: var(--line-dark); }
 
 @media (max-width: 860px){
-  .stack-card__inner{ grid-template-columns: 1fr; padding: var(--sp-6) var(--sp-5); }
-  .stack-card__media{ order: -1; }
+  .stack-card__inner{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "index"
+      "media"
+      "text";
+    padding: var(--sp-6) var(--sp-5);
+  }
 }
 
 /* ===== Tools & Skills ===== */
